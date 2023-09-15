@@ -14,7 +14,7 @@ export default function UploadProduct() {
           const newProduct = await createProduct(data);
           console.log('Producto creado:', newProduct);
           swal({
-            title: "Buen trabajo!",
+            title: "Buen trabajo!!",
             text: data.name + " ha sido agregado!",
             icon: "success",
             button: "Aceptar",
