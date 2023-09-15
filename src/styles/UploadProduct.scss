@@ -1,0 +1,33 @@
+.form_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form{
+    background-color: black;
+    border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+input, textarea{
+    border: none;    
+}
+
+.txt{
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+// Quitarle las flechas al input
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
