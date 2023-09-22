@@ -5,6 +5,8 @@ import '../styles/ListProduct.scss';
 import Footer from './Footer';
 import { deleteProduct } from '../services/DELETE/DeletProductService';
 import swal from 'sweetalert';
+import Categories from '../components/Categories';
+import Navbar from '../components/Navbar';
 
 export default function ListProducts() {
 
@@ -28,7 +30,10 @@ export default function ListProducts() {
   }
 
   return (
+    
     <div>
+      <Navbar />
+         <Categories/>
         <div className='section_ist_container_products'>
             {products.map(product => (
               <div className='list_container_products'>

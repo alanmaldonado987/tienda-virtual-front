@@ -1,8 +1,10 @@
 import axios from 'axios';
+import { URL_API } from '../utils/URL_API';
+
 export async function getElectronic(){
     try{
         const response = await axios({ //Devuelve una promesa
-            url: 'http://localhost:4000/products/electronica',
+            url: `${URL_API}/products/electronica`,
             method: 'GET'
         })
         return response;

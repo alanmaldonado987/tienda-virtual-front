@@ -2,6 +2,8 @@ import { useContext, useState, React} from "react"
 import { productContext } from "../context/ProductContext";
 import '../styles/Carrito.scss'
 import Modal from "./Modal";
+import Categories from '../components/Categories';
+import Navbar from '../components/Navbar';
 
 export default function Carrito() {
 
@@ -29,6 +31,8 @@ export default function Carrito() {
   return (
     <>
        <div className="carrito_product_container">
+        <Navbar/>
+        <Categories/>
         {carProducts.length === 0 ? <Modal/> : <></> }
           {carProducts.map((product)=>{
             return <div className="carrito_container">

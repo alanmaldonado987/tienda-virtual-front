@@ -11,7 +11,7 @@ export default function Navbar() {
     <>
         <div className='navbar' >
             <ul className='logo'>
-                <li> <Link to='/'> TIENDA CARVAJAL </Link> </li>
+                <li> <Link to='/ListProducts'> TIENDA CARVAJAL </Link> </li>
             </ul>
             <ul className='secciones'>
                 <li><ion-icon name="call"></ion-icon> +57 xxx-xxx-xxxx</li>

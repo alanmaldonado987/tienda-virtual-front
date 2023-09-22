@@ -1,0 +1,137 @@
+
+.register_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.register_form_container{
+    width: 50%;
+    height: 100%;
+    padding-left: 73px;
+}
+
+.register_header{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.register_header h2, .register_header p{
+    color: #444B59;
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}
+
+.register_header h2{
+    margin: 0;
+}
+
+.register_header span h2{
+    margin: 0;
+    color: #789ADE;
+}
+
+.register_header span{
+    color: var(--blue-17, #8699DA);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.register_form_login form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+}
+
+.register_form_login label{
+    text-align: start;
+    color: #444B59;
+    font-family: Nunito;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}
+
+.register_form_login input[type="text"] {
+    display: flex;
+    padding: 24px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 80px;
+    border: 2px solid var(--dark-blue-18, #789ADE);
+    background: var(--white, #FFF);
+}
+
+.register_form_login input[type="password"] {
+    display: flex;
+    padding: 24px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 80px;
+    border: 2px solid var(--dark-blue-18, #789ADE);
+    background: var(--white, #FFF);
+}
+
+.register_lastname label, .register_name label{
+    text-align: start;
+}
+
+.register_sing_up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 25px;
+    border-radius: 80px;
+    border: none;
+    background: var(--blue-27, #8699DA);
+    box-shadow: 4px 8px 12px 0px rgba(78, 99, 141, 0.06), 0px 4px 12px 0px rgba(200, 211, 249, 0.60) inset;
+    cursor: pointer;
+    color: var(--white, #FFF);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.8px;
+    margin-top: 16px;
+}
+
+
+.register_img_form_container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register_img_form_container_img{
+    width: 540px;
+    height: 508px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+.register_names{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 26%;
+}
+
+
