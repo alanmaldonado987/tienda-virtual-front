@@ -11,8 +11,10 @@ export default function UploadProduct() {
     const onSubmit = async (data) => {
         try {
           console.log(data);
-          const newProduct = await createProduct(data);
-          console.log('Producto creado:', newProduct);
+          let file = new FormData();
+          file.append('file', data.file[0])
+          const newProduct = await createProduct(data, file);
+          
           swal({
             title: "Buen trabajo!!",
             text: data.name + " ha sido agregado!",
@@ -129,7 +131,8 @@ export default function UploadProduct() {
                 <p style={{color: 'red'}}>El Stock Disponible sebe ser máximo de 100</p>
               )
             }
-
+                <label for="file">Selecciona un archivo:</label>
+                <input type="file" name="file" id="file" {...register('file', {required: true})} />
             <br/>
 
             <button type='submit'>  Agregar Producto</button>

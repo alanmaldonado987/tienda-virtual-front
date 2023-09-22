@@ -1,14 +1,10 @@
 import axios from 'axios';
 import { URL_API } from '../../utils/URL_API';
-export async function createProduct(product){
+import { GetToken } from '../../utils/GetToken';
+
+export async function createProduct(product, file){
     try{
-        const response = await axios({ //Devuelve una promesa
-            url: `${URL_API}/products/addProduct`, //URL peticion
-            method: 'POST', //Tipo de peticion
-            data: {
-                ...product,
-            }
-        })
+        const response = axios.post('http://localhost:4000/api/v1/products/addProduct', product, file)
         return response;
     }catch(e){
         console.error(e);

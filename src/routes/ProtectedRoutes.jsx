@@ -12,6 +12,6 @@ export default function ProtectedRoutes({ canActivate, role, redirectPath='/' })
         console.log('prueba: ', role);
         return <Navigate to={redirectPath} replace />
     }
-    
+    console.log('prueba deberia ser amind: ', role);
     return <Outlet />
 }
